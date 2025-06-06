@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: "Itim", sans-serif;
+    font-weight: 1100;
+    font-size: 25px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;  
+    }
+
+    header {
+    background-color: rgb(196, 76, 76);
+    color: white;
+    text-align: center;
+    padding: 50px;                                          
+}
+
+body {
+    font-family: "Itim", sans-serif;
+    font-weight: 1100;
+    font-style: normal;
+}
+
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #7e4444;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e4bdbd;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #d1c9c9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {box-sizing: border-box;}
+body {font-family: "Itim", sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* ใช้ flexbox เพื่อจัดเรียง content และ slideshow */
+.content-wrapper {
+    margin-top: 20px;
+    max-width: 90%;
+    margin: auto;
+    background: rgb(216, 174, 174);
+    padding: 20px;
+    margin-top: 20px;
+    gap: 20px;
+    text-align: center;
+    
+}
+
+.content {
+    flex: 1; /* ให้ content ขยายเต็มที่ */
+    max-width: 60%; /* จำกัดขนาด content ไม่ให้กว้างเกินไป */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    flex-basis: 50%; /* ให้ slideshow กว้าง 35% */
+    max-width: 500px;
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* เนื้อหาหลัก */
+.content {
+    width: 90%;
+    background: rgb(216, 174, 174);
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+table {
+  font-family: "Itim", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Footer */
+footer {
+    background: rgb(196, 76, 76);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของ Katoey_กะเตย</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="Home.html">Home</a> 
+        <a href="About.html">About</a>
+        <a href="Service.html">Service</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Motto.html">คติประจำใจ</a>
+            <a href="My Friend.html">เพื่อนของฉัน</a>
+            <a href="https://swdtc.ac.th/">เว็บไซต์วิลัย</a>
+            <a href="https://rms.swdtc.ac.th">RMS</a>
+          </div>
+        </div> 
+      </div>
+
+    <div class="container">
+     <div class="content-wrapper">
+        <h2>รายชื่อเพื่อนของฉัน</h2>
+        <table>
+            <tr>
+                <th>ชื่อ</th>
+                <th>นามสกุล</th>
+                <th>ชื่อเล่น</th>
+                <th>ที่อยู่</th>
+                <th>เบอร์โทร</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <th>ศศิรา</th>
+                <th>ปาสกิต</th>
+                <th>ใบเตย</th>
+                <th>บ้านตาล อ.สว่างแดนดิน จ.สกลนคร</th>
+                <th>0961763585</th>
+                <th>67319010071@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>น้ำพุ</th>
+                <th>งามเถื่อน</th>
+                <th>มี่</th>
+                <th>บ้านโคกไชยวาน อ.เจริญศิลป์ จ.สกลนคร</th>
+                <th>0989706501</th>
+                <th>67319010037@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>นนทวร</th>
+                <th>นามวงค์</th>
+                <th>ปราย</th>
+                <th>อ.สัตหีบ จ.ชลบุรี</th>
+                <th>0803718070</th>
+                <th>67319010106@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>กรวรรณ</th>
+                <th>แก้วบุญมา</th>
+                <th>แก้ม</th>
+                <th>บ้านห้วยโม อ.ส่องดาว จ.สกลนคร</th>
+                <th>0966417521</th>
+                <th>67319010037@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>มัทนา</th>
+                <th>วงศาวัตร</th>
+                <th>ใบไผ่</th>
+                <th>บ้านนาสีนวล อ.ส่องดาว จ.สกลนคร</th>
+                <th>0960722615</th>
+                <th>67319010057@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>ศักดิ์สิทธิ์</th>
+                <th>รัตนะชัย</th>
+                <th>ติ๊ก</th>
+                <th>บ้านผ้าขาว อ.พังโคน จ.สกลนคร</th>
+                <th>0923267764</th>
+                <th>67319010073@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>ธนวัฒน์</th>
+                <th>คำปัญโญ</th>
+                <th>มิกซ์</th>
+                <th>บ้านทุ่งคำ อ.เจริญศิลป์ จ.สกลนคร</th>
+                <th>0623852517</th>
+                <th>67319010104@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>ณัฐพงษ์</th>
+                <th>เหินหอม</th>
+                <th>กร</th>
+                <th>บ้านโพนสว่าง อ.สว่างแดนดิน จ.สกลนคร</th>
+                <th>0942861685</th>
+                <th>67319010024@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>ชานน</th>
+                <th>กอสุวรรณ์</th>
+                <th>แม็ก</th>
+                <th>บ้านดอนยาวใหญ่ อ.วาริชภูมิ จ.สกลนคร</th>
+                <th>0829179293</th>
+                <th>67319010018@swdtcmail.com</th>
+            </tr>
+            <tr>
+                <th>กนต์ธร</th>
+                <th>อรัญโสด</th>
+                <th>นิก</th>
+                <th>บ้านดอนสร้างไพร อ.เจริญศิลป์ จ.สกลนคร</th>
+                <th>0989101107</th>
+                <th>67319010001@swdtcmail.com</th>
+            </tr>
+        </table>
+     </div> 
+    </div>
+
+    <footer>
+        <p>© 2025 เว็บไซต์ของ Katoey_กะเตย</p>
+    </footer>
+</body>
+</html>
