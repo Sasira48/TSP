@@ -85,6 +85,8 @@
                 <input type="text" id="fname" name="fname" required><br>
                 <label for="lname">นามสกุล</label>
                 <input type="text" id="lname" name="lname" required><br>
+                <label for="lname">ชื่อเล่น</label>
+                <input type="text" id="Nname" name="Nname" required><br>
                 <button type="submit">Next</button>
             </form>
             <p id="welcomeMessage"></p>
@@ -96,6 +98,7 @@
             const form = document.getElementById("welcomeForm");
             const fnameInput = document.getElementById("fname");
             const lnameInput = document.getElementById("lname");
+            const NnameInput = document.getElementById("Nname");
             const welcomeMessage = document.getElementById("welcomeMessage");
             const goToMainButton = document.getElementById("goToMain");
 
@@ -104,9 +107,10 @@
 
             const fname = fnameInput.value.trim();
             const lname = lnameInput.value.trim();
+            const Nname = NnameInput.value.trim();
 
-            if (fname && lname) {
-            welcomeMessage.textContent = `สวัสดีคุณ ${fname} ${lname} ยินดีต้อนรับสู่เว็บไซต์ของเรา!`;
+            if (fname && lname && Nname) {
+            welcomeMessage.textContent = `สวัสดีคุณ ${fname} ${lname} ${Nname} ยินดีต้อนรับสู่เว็บไซต์ของเรา!`;
             } else {
             welcomeMessage.textContent = "ยินดีต้อนรับผู้เยี่ยมชม!";
             }
